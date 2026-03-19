@@ -1,2 +1,30 @@
-/.pytest_cache
-/.venv
+# Virtual environments
+.venv/
+venv/
+env/
+
+# uv
+.uv/
+
+# Build / distribution
+dist/
+build/
+*.egg-info/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary weight download directory (created by convert_weights.py)
+_tmp_matlab_weights/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
