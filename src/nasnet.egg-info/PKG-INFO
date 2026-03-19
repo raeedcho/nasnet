@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: nasnet
+Version: 0.1.0
+Summary: PyTorch NASNet spike sorter (Issar et al. 2020)
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch>=2.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: numpy>=1.24; extra == "dev"
+Provides-Extra: convert
+Requires-Dist: numpy>=1.24; extra == "convert"
+Dynamic: license-file
+
+# nasnet
+
+PyTorch implementation of NASNet spike sorter (Issar et al. 2020, *J Neurophysiol*).
+
+## Installation
+
+```bash
+pip install git+https://github.com/<your-org>/nasnet.git
+```
+
+## Usage
+
+```python
+from nasnet import load_pretrained
+
+model = load_pretrained("UberNet_N50_L1")
+is_spike = model.classify(waveforms, gamma=0.5)
+```
+
+## Available Networks
+
+- `MotorNet`
+- `UberNet_N50_L1`
+- `uStimNet`
+- `uStimNet_artifact`
+
+## Reference
+
+Issar D, Bhagat SM, Smith MA, Bhatt S. 2020. Neural artifact sorting with the
+Neural Artifact Sorter Network (NASNet). *J Neurophysiol* 124(3):845–856.
+https://doi.org/10.1152/jn.00641.2019

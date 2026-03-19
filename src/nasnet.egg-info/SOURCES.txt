@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/nasnet/__init__.py
+src/nasnet/model.py
+src/nasnet/pretrained.py
+src/nasnet.egg-info/PKG-INFO
+src/nasnet.egg-info/SOURCES.txt
+src/nasnet.egg-info/dependency_links.txt
+src/nasnet.egg-info/requires.txt
+src/nasnet.egg-info/top_level.txt
+src/nasnet/weights/__init__.py
+tests/test_model.py
+tests/test_pretrained.py
